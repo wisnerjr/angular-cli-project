@@ -1,0 +1,36 @@
+<div class="col-md-24 col-sm-24">
+  <div class="panel panel-default">
+    <div class="panel-heading background-blue">
+      <h1 class="page-title">
+        &nbsp;&nbsp;
+        <img [src]="fullImagePath" /> &nbsp;&nbsp; Frontend Challenge - Wisner Júnior</h1>
+    </div>
+    <div class="panel-body panel-custom">
+      <div class="row">
+        <div class="col-md-2">
+          <span class="info-button" [pTooltip]="message" [tooltipPosition]="position" tooltipEvent="hover" title="">
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+          </span>
+          <p-menu [model]="menu"></p-menu>
+        </div>
+
+        <div class="col-md-10">
+          <h3>Relatório Aleatório Que Não Faz Sentido Algum</h3>
+          <small class="text-muted">Utilizando Angular 2 CLI, PrimeNG, Bootstrap e Chart.js</small>
+
+          <br />
+          <p-chart type="bar" [data]="data"></p-chart>
+
+          <p-dataTable [value]="dados">
+            <p-column field="data" header="Data"></p-column>
+            <p-column field="demanda" header="Demanda"></p-column>
+            <p-column field="capacidade" header="Capacidade"></p-column>
+            <p-column field="atendimentoRealizado" header="Atendimento Realizado"></p-column>
+            <p-column field="atendimentoPlanejado" header="Atendimento Planejado"></p-column>
+            <p-column field="desvio" header="Desvio"></p-column>
+          </p-dataTable>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
